@@ -41,9 +41,9 @@ class ShortcutDetailViewController: UITableViewController {
       let shortcut = UIApplicationShortcutItem(type: "mobi.uchicago.shortcuts.dynamic",
                                                localizedTitle: "😀Shortcut Title",
                                                localizedSubtitle: "Dynamic",
-                                               icon: UIApplicationShortcutIcon(type: .Add),
+                                               icon: UIApplicationShortcutIcon(type: .add),
                                                userInfo: nil)
-      UIApplication.sharedApplication().shortcutItems = [shortcut]
+      UIApplication.shared.shortcutItems = [shortcut]
       
       
         // Initialize the UI to reflect the values of the `shortcutItem`.
