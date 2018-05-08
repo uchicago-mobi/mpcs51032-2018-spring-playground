@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12117" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Page-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Page" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SimpleWatchConnectivity_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="109" alignment="left" radius="0.0" id="edc-3E-23V">
+                            <items>
+                                <label width="1" height="115" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="BcC-MK-Pef"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" radius="0.0" id="eEP-ld-0Ut">
+                            <items>
+                                <button width="1" height="1" alignment="center" verticalAlignment="center" title="Button" id="k6l-Dc-fO2">
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="luh-Iu-UvO"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="actionButton" destination="k6l-Dc-fO2" id="cV5-Bv-2x9"/>
+                        <outlet property="actionGroup" destination="eEP-ld-0Ut" id="Ci0-BR-5lt"/>
+                        <outlet property="statusGroup" destination="edc-3E-23V" id="Q8d-mI-KXN"/>
+                        <outlet property="statusLabel" destination="BcC-MK-Pef" id="yPo-k3-ZB2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="9"/>
+        </scene>
+    </scenes>
+</document>
